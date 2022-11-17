@@ -31,7 +31,7 @@
     
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Animal Classification using CNN</a>
+            <a class="navbar-brand" href="#">Forest Fire Detection</a>
         </div>
     </nav>
     <div class="container">
@@ -39,27 +39,22 @@
 		<div class="container">
 		  <div class="row">
 			<div class="col-sm-6 bd">
-			  <h3>Forest fire detection: </h3>
-			  <br>
 			  <p>Forest fire is an alarm in condition which occurs in boreal, tropical as well as temperal forests due to natural causes such as volcanic eruption, high atmospheric temperature and dryness (low humidity) and man made causes such as cigarettes discarded with flame,campus left unattended, burning of debris equipment use and malfunctions, leftovers of ignited flammable  products which not only causes harmful effects on the ecosystem but also for human beings who are living in the forest(tribes) as well as the surrounding areas.So it is necessary to prevent forest fire.</p>
 				<img src="https://cache.desktopnexus.com/thumbseg/2387/2387240-bigthumbnail.jpg" height="50%",width="20%">       
 			</div>
 			<div class="col-sm-6">
 				<div>
-					<h4>Upload Image Here To check if there is fire or not</h4>
+					<h4>Upload Video Here To check if there is fire or not</h4>
 			<form action = "http://localhost:5000/" id="upload-file" method="post" enctype="multipart/form-data">
 				<label for="imageUpload" class="upload-label">
 					Choose...
 				</label>
-				<input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+				<input type="file" name="image" id="imageUpload" accept=".mp4">
 			</form>
-			
 
 			<div class="image-section" style="display:none;">
-				<div class="img-preview">
-					<div id="imagePreview">
-					</div>
-				</div>
+
+
 				<div>
 					<button type="button" class="btn btn-info btn-lg " id="btn-predict">Predict!</button>
 				</div>
